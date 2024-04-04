@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: yellowgreen;
+}
+
+#reloj-analogico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 50%;
+    font-family: monospace;
+    font-size: 1.7rem;
+    box-shadow: inset 0px 0px 20px 0px red;
+    position: relative;
+}
+
+#reloj-analogico div {
+    position: absolute;
+    transform-origin: bottom;
+}
+
+#reloj-analogico div#hours {
+    height: 25%;
+    top: 25%;
+    border: 2px solid orangered;
+}
+
+#reloj-analogico div#minutes {
+    height: 35%;
+    top: 15%;
+    border: 2px solid orangered;
+}
+
+#reloj-analogico div#seconds {
+    height: 40%;
+    top: 10%;
+    border: 1px solid green;
+}
